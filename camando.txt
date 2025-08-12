@@ -1,0 +1,7 @@
+ npm run dev
+npm run json-server
+npm install json-server --save-dev
+ npx json-server --watch db.json --port 3000     
+npx tailwindcss init -p
+install -D tailwindcss postcss autoprefixer
+npm install -D @tailwindcss/postcss postcss autoprefixer

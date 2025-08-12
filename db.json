@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "fito0728@gmail.com",
+      "password": "Jesucristo0728@",
+      "name": "fito0728"
+    }
+  ],
+  "fincas": [
+    {
+      "id": "1",
+      "nombre": "Finca El Progreso",
+      "departamento": "Cundinamarca",
+      "hectareas": 12,
+      "area": 12
+    },
+    {
+      "id": "2",
+      "nombre": "Finca La Esperanza",
+      "departamento": "Funza",
+      "hectareas": 8
+    }
+  ]
+}
