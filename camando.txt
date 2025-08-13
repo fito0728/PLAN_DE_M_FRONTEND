@@ -5,3 +5,8 @@ npm install json-server --save-dev
 npx tailwindcss init -p
 install -D tailwindcss postcss autoprefixer
 npm install -D @tailwindcss/postcss postcss autoprefixer
+
+…o enviar un repositorio existente desde la línea de comandos
+git remoto agregar origen https://github.com/fito0728/PLAN_DE_M_FRONTEND.git
+ git rama -M principal 
+git push -u origen principal
