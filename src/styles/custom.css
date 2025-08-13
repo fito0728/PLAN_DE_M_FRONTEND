@@ -8,7 +8,7 @@
 
 /* Fondo global */
 body {
-  background: linear-gradient(180deg, #f6fbff 0%, #eef7ff 100%);
+  background: linear-gradient(180deg, #0188f7 0%, #eef7ff 100%);
   font-family:
     Inter,
     ui-sans-serif,
@@ -20,6 +20,19 @@ body {
     Arial;
   color: #0f172a;
   margin: 0;
+}
+
+/* Botón */
+.btn {
+  background: var(--brand);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;  
 }
 
 /* Contenedor central */
