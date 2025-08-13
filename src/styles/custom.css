@@ -1,4 +1,5 @@
 /* src/styles/custom.css - Estilos inmediatos y agradables */
+@import 'tailwindcss';
 :root {
   --brand: #4aa8ff;
   --brand-dark: #2f8fff;

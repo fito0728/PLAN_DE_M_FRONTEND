@@ -13,6 +13,7 @@
     "json-server": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"

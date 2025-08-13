@@ -2,39 +2,62 @@
   <div
     class="h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700"
   >
-    <div class="bg-white rounded-lg shadow-lg flex overflow-hidden max-w-3xl w-full">
+    <div class="bg-white rounded-xl shadow-lg flex overflow-hidden max-w-3xl w-full">
       <!-- Imagen decorativa -->
-      <div class="hidden md:block w-1/2 bg-blue-100 flex items-center justify-center">
-        <img src="/img/Login (2).png" alt="Login" class="w-3/4" />
+      <div class="hidden md:flex w-1/2 bg-blue-50 items-center justify-center">
+        <img src="/img/Login (2).png" alt="Login" class="w-3/4 drop-shadow-md" />
       </div>
 
       <!-- Formulario -->
       <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
-        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Iniciar Sesión</h1>
+        <!-- Título -->
+        <h1
+          class="text-3xl font-extrabold text-gray-800 mb-6 flex items-center justify-center gap-2"
+        >
+          <LockClosedIcon class="w-7 h-7 text-blue-600" />
+          Iniciar Sesión
+        </h1>
 
-        <form @submit.prevent="login" class="space-y-4">
+        <!-- Formulario -->
+        <form @submit.prevent="login" class="space-y-5">
+          <!-- Campo email -->
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
-            <input
-              type="email"
-              v-model="email"
-              placeholder="Ingresa tu correo"
-              class="input -compact--input--w-full"
-            />
+            <div class="relative">
+              <EnvelopeIcon class="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+              <input
+                type="email"
+                v-model="email"
+                placeholder="Ingresa tu correo"
+                class="pl-10 w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              />
+            </div>
           </div>
 
+          <!-- Campo contraseña -->
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Contraseña</label>
-            <input
-              type="password"
-              v-model="password"
-              placeholder="Ingresa tu contraseña"
-              class="input input--compact--input--w-full"
-            />
+            <div class="relative">
+              <KeyIcon class="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+              <input
+                type="password"
+                v-model="password"
+                placeholder="Ingresa tu contraseña"
+                class="pl-10 w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              />
+            </div>
           </div>
 
-          <button type="submit" class="input input--compact--w-full">Iniciar sesión</button>
+          <!-- Botón -->
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold py-2 px-4 rounded-lg shadow-md flex items-center justify-center gap-2"
+          >
+            <ArrowRightOnRectangleIcon class="w-5 h-5" />
+            Iniciar sesión
+          </button>
 
+          <!-- Error -->
           <p v-if="error" class="text-red-500 text-sm text-center mt-2">{{ error }}</p>
         </form>
       </div>
@@ -43,7 +66,20 @@
 </template>
 
 <script>
+import {
+  LockClosedIcon,
+  EnvelopeIcon,
+  KeyIcon,
+  ArrowRightOnRectangleIcon,
+} from '@heroicons/vue/24/solid'
+
 export default {
+  components: {
+    LockClosedIcon,
+    EnvelopeIcon,
+    KeyIcon,
+    ArrowRightOnRectangleIcon,
+  },
   data() {
     return {
       email: '',
