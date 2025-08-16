@@ -1,12 +1,11 @@
 <template>
   <div
-    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-700 p-6"
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 to-green-800 p-6"
   >
-    <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full overflow-hidden">
+    <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-screen overflow-hidden">
       <!-- Banner -->
-      <div class="w-full">
-        <img src="/img/home-icon.png" alt="Inicio" class="w-full h-56 object-contain bg-gray-100" />
-      </div>
+
+      <img src="/img/home-icon.png" alt="Inicio" class="w-full h-56 object-cover bg-gray-100" />
 
       <!-- Contenido -->
       <div class="p-8 text-center">

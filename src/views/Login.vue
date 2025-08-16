@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700"
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 to-green-800 p-6"
   >
     <div class="bg-white rounded-xl shadow-lg flex overflow-hidden max-w-3xl w-full">
       <!-- Imagen decorativa -->
